@@ -255,12 +255,14 @@ inicio de sobre nós
 #sobre-nos {
     width: 100%;
     height: 700px;
+    padding-bottom: 100px;
 }
 
 .contentSN {
     padding-top: 100px;
     transition: all 0.5s;
     margin-left: 60px;
+    padding-bottom: 100px;
 }
 
 .contentSN>h1 {
