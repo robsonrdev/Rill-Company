@@ -1,8 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    
     list-style: none;
     text-decoration: none;
 }
@@ -19,6 +18,11 @@
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
+}
+body{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; 
 }
 
 a {
@@ -281,11 +285,14 @@ inicio de slide
     width: 100vh;
     height: 500px;
     display: flex;
+    
 }
 .slides {
     display: flex;
     transition: transform 1s ease-in-out;
+    
 }
 .slide {
     width: 100vw;
+    
 }
