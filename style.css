@@ -1,0 +1,295 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+#navBar {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    flex-wrap: wrap;
+    color: #2a89d3;
+    font-size: small;
+    border-bottom: solid 2px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+body{
+    overflow-x: hidden; 
+}
+
+a {
+    color: #2a89d3;
+}
+
+#list {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#list>li {
+    padding-left: 50px;
+}
+
+#entrar {
+    padding-right: 100px;
+    align-content: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#icons {
+    display: flex;
+    padding-right: 200px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+#cart {
+    padding-left: 30px;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+/* 🔹 Mobile: Esconde o menu Desktop e exibe o Mobile */
+@media (max-width: 1000px) {
+    #navBar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .nav-mobile {
+        display: flex;
+        width: 500px;
+        align-items: center;
+        color: #2a89d3;
+        font-size: small;
+        justify-content: space-evenly;
+    }
+}
+
+#bot {
+    display: flex;
+    padding-right: 100px;
+}
+
+#logo {
+    height: 70px;
+}
+
+#teste {
+    display: flex;
+    padding-top: 10px;
+}
+.produtos {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    height: 420PX;
+    width: 250px;
+    background-color: #2369bf07;
+    color: black;
+    margin-left: 20px;
+    justify-content: flex-end;
+    align-items: baseline;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgba(128, 128, 128, 0.103);
+}
+
+.produtos>p {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgProdutos {
+    width: 250px;
+    height: 290px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+#conteiner {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraliza os itens */
+    gap: 20px;
+    /* Adiciona espaçamento entre os produtos */
+}
+
+#camisa {
+    transition: opacity 0.5s
+}
+
+.botao {
+    background-color: #1577c0;
+    height: 100%;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.botao:hover {
+    background-color: #0066ad;
+    transition: all 0.5s;
+}
+
+.comprar {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+/* #fav {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin: auto;
+    margin-left: 10px;
+    padding-right: 30px;
+} */
+
+#conteiner_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#rodape {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: rgba(185, 185, 185, 0.171);
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+#pagamento {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(185, 185, 185, 0.171);
+}
+
+#paginasRodape {
+    color: #2a89d3;
+    padding-top: 50px;
+}
+
+#logoRodape {
+    height: 200px;
+    width: 200px;
+    margin-bottom: -50px;
+}
+
+.insti {
+    text-align: left;
+    color: rgb(59, 59, 59);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.li-insti {
+    margin: 5px;
+}
+
+.titulo-inst {
+    color: rgb(59, 59, 59);
+}
+
+.seg>img {
+    height: 90px;
+    width: 200px;
+}
+
+#rodape-img {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+#rodape-img>h1 {
+    font-size: 30px
+}
+
+#insta {
+    color: #2a89d3;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*
+inicio de sobre nós
+*/
+#sobre-nos {
+    width: 100%;
+    height: 700px;
+}
+
+.contentSN {
+    padding-top: 100px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.contentSN>h1 {
+    color: #2a89d3;
+    margin: 25px 0px;
+    font-size: 20px;
+}
+
+.contentSN>p {
+    font-weight: normal;
+    text-align: justify;
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*
+inicio de slide
+*/
+.slideshow-container {
+    width: 100vh;
+    height: 500px;
+    display: flex;
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+.slide {
+    width: 100vw;
+}

@@ -1,0 +1,215 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+#navBar {
+    cursor: pointer;
+    display: flex;
+    padding-left: 50px;
+    margin-top: -10px;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #f0f0f05e;
+    height: 80px;
+    color: #2a89d3;
+}
+
+a {
+    color: #2a89d3;
+    text-decoration: none;
+}
+
+#paginas {
+    display: flex;
+}
+
+#bot {
+    display: flex;
+    padding-right: 100px;
+    align-items: center;
+}
+
+#list {
+    display: flex;
+    padding-left: 10px;
+}
+
+.header {
+    padding-left: 50px;
+    list-style: none;
+    align-content: center;
+}
+
+#heart {
+    font-size: 25px;
+    padding-left: 100px;
+    font-weight: normal;
+}
+
+#cart {
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+#logo {
+    height: 70px;
+}
+
+p {
+    font-weight: normal;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.content {
+    text-align: center;
+}
+
+.contato {
+    padding-bottom: 98px;
+    padding-top: 20px;
+}
+
+.titulo {
+    margin-top: 25px;
+}
+
+#email,
+#telefone {
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.form {
+    margin-top: 3%;
+}
+
+.formulario {
+    min-width: 25%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #00000028;
+}
+
+#msg {
+    min-height: 160px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #2a89d3;
+    border: 1px solid #ffffff28;
+    margin-top: 20px;
+    min-width: 25%;
+    height: 40px;
+    transition: all 0.7s;
+}
+
+.btn:hover {
+    background-color: #2a8ad3b7;
+    transition: all 0.7s;
+}
+
+
+#sobre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#rodape {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: rgba(185, 185, 185, 0.171);
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+#pagamento {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(185, 185, 185, 0.171);
+}
+
+#paginasRodape {
+    color: #2a89d3;
+    padding-top: 50px;
+}
+
+#logoRodape {
+    height: 200px;
+    width: 200px;
+    margin-bottom: -50px;
+}
+
+.insti {
+    text-align: left;
+    color: rgb(59, 59, 59);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.li-insti {
+    margin: 5px;
+}
+
+.titulo-inst {
+    color: rgb(59, 59, 59);
+}
+
+.seg>img {
+    height: 90px;
+    width: 200px;
+}
+
+#rodape-img {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#rodape-img>h1 {
+    font-size: 30px
+}
+
+#insta {
+    color: #2a89d3;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*
+inicio de sobre nós
+*/
+#sobre-nos {
+    width: 100%;
+    height: 700px;
+}
+
+.contentSN {
+    padding-top: 100px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.contentSN>h1 {
+    color: #2a89d3;
+    margin: 25px 0px;
+    font-size: 20px;
+}
+
+.contentSN>p {
+    font-weight: normal;
+    text-align: justify;
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-evenly;
+}
