@@ -38,7 +38,7 @@ slideIndex = (slideIndex + 1) % totalSlides;
 slides.style.transform = `translateX(-${slideIndex * 50}%)`;
 }
 
-setInterval(showNextSlide, 3000); // Troca a imagem a cada 3 segundos
+setInterval(showNextSlide, 2500); // Troca a imagem a cada 3 segundos
 
 
 // // Função para trocar a imagem e adicionar transição
