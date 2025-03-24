@@ -25,6 +25,166 @@ img.addEventListener('mouseover', changeImageOnHover);
 img.addEventListener('mouseout', changeImageOnHover);
 // fim do comando para uma imagem 1°imagem
 
+let currentImage2 = 1;
+
+const img2 = document.getElementById('camisa2');
+
+function testeImg() {
+    img2.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img2.src = 'Fotos/camisa 2 costas.png';
+            currentImage = 2;
+        } else {
+            img2.src = 'Fotos/camisa2 frente.png';
+            currentImage = 1;
+        }
+
+        img2.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img2.addEventListener('mouseover', testeImg)
+img2.addEventListener('mouseout', testeImg);
+
+
+let currentImage3 = 1;
+
+const img3 = document.getElementById('camisa3');
+
+function Img3() {
+    img3.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img3.src = 'Fotos/camisa 3 costas.png';
+            currentImage = 2;
+        } else {
+            img3.src = 'Fotos/frente.png';
+            currentImage = 1;
+        }
+
+        img3.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img3.addEventListener('mouseover', Img3)
+img3.addEventListener('mouseout', Img3);
+
+
+let currentImage4 = 1;
+
+const img4 = document.getElementById('camisa4');
+
+function Img4() {
+    img4.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img4.src = 'Fotos/camisa 4 costas.png';
+            currentImage = 2;
+        } else {
+            img4.src = 'Fotos/camisa 4 frente.png';
+            currentImage = 1;
+        }
+
+        img4.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img4.addEventListener('mouseover', Img4)
+img4.addEventListener('mouseout', Img4);
+
+
+
+let currentImage5 = 1;
+
+const img5 = document.getElementById('camisa5');
+
+function Img5() {
+    img5.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img5.src = 'Fotos/camisa 5 costas.png';
+            currentImage = 2;
+        } else {
+            img5.src = 'Fotos/camisa 5 frente.png';
+            currentImage = 1;
+        }
+
+        img5.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img5.addEventListener('mouseover', Img5)
+img5.addEventListener('mouseout', Img5);
+
+
+let currentImage6 = 1;
+
+const img6 = document.getElementById('tenis1');
+
+function Img6() {
+    img6.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img6.src = 'Fotos/tenis 1 cima.png';
+            currentImage = 2;
+        } else {
+            img6.src = 'Fotos/tenis 1 frente.png';
+            currentImage = 1;
+        }
+
+        img6.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img6.addEventListener('mouseover', Img6)
+img6.addEventListener('mouseout', Img6);
+
+let currentImage7 = 1;
+
+const img7 = document.getElementById('tenis2');
+
+function Img7() {
+    img7.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img7.src = 'Fotos/tenis 2 lado.png';
+            currentImage = 2;
+        } else {
+            img7.src = 'Fotos/tenis 2 frente.png';
+            currentImage = 1;
+        }
+
+        img7.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img7.addEventListener('mouseover', Img7)
+img7.addEventListener('mouseout', Img7);
+
+
+let currentImage8 = 1;
+
+const img8 = document.getElementById('short1');
+
+function Img8() {
+    img8.style.opacity = 0.1;
+    setTimeout(() => {
+        if (currentImage === 1) {
+            img8.src = 'Fotos/short 1 costas.png';
+            currentImage = 2;
+        } else {
+            img8.src = 'Fotos/short 1 frente.png';
+            currentImage = 1;
+        }
+
+        img8.style.opacity = 1;  // Inicia o fade in
+    }, 300);  // Tempo de transição (1 segundo)
+}
+
+img8.addEventListener('mouseover', Img8)
+img8.addEventListener('mouseout', Img8);
+
 
 
 
@@ -40,41 +200,3 @@ slides.style.transform = `translateX(-${slideIndex * 50}%)`;
 
 setInterval(showNextSlide, 2500); // Troca a imagem a cada 3 segundos
 
-
-// // Função para trocar a imagem e adicionar transição
-// function changeImageOnHover(event) {
-//     const img = event.target; // O alvo (elemento) do evento
-
-//     let currentImage = img.getAttribute('data-current'); // Obtém o estado atual da imagem (se é a original ou a trocada)
-    
-//     img.style.opacity = 0.1; // Inicia o fade out (transição de opacidade)
-    
-//     setTimeout(() => {
-//         if (currentImage === '1') {  // Se a imagem for a original
-//             img.src = img.getAttribute('data-alt');  // Troca para a imagem alternada
-//             img.setAttribute('data-current', '2');  // Atualiza o estado para "imagem trocada"
-//         } else {  // Caso contrário, volta para a imagem original
-//             img.src = img.getAttribute('data-original');
-//             img.setAttribute('data-current', '1'); // Atualiza o estado para "imagem original"
-//         }
-
-//         img.style.opacity = 1;  // Inicia o fade in (transição de opacidade)
-//     }, 300);  // Tempo de transição (300 ms)
-// }
-
-// // Seleciona todas as imagens com a classe 'imgProdutos'
-// const images = document.querySelectorAll('.imgProdutos');
-
-// // Adiciona o evento de hover para cada imagem
-// images.forEach(img => {
-//     // Armazena o caminho da imagem original e da imagem alternada
-//     img.setAttribute('data-original', img.src);  // Imagem original
-//     img.setAttribute('data-alt', img.src.replace('.png', '1.2.png')); // Imagem trocada (exemplo de troca)
-
-//     // Definir o estado inicial da imagem como "original"
-//     img.setAttribute('data-current', '1');
-
-//     // Adiciona os eventos de mouse
-//     img.addEventListener('mouseover', changeImageOnHover);
-//     img.addEventListener('mouseout', changeImageOnHover);
-// });
