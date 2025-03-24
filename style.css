@@ -56,6 +56,7 @@ a {
 
 #cart {
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .navbar-mobile {
@@ -148,6 +149,7 @@ a {
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 .botao:hover {
@@ -298,4 +300,49 @@ inicio de slide
 .slide {
     width: 100vw;
     
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Ícone do carrinho */
+.cart-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Barra lateral do carrinho */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Começa escondido */
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 9999; /* Certifique-se de que esse valor é maior do que o do slide */
+}
+
+.cart-sidebar.show {
+    right: 0;
+}
+
+/* Botão de fechar */
+.close-cart {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }

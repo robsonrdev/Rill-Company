@@ -200,3 +200,32 @@ slides.style.transform = `translateX(-${slideIndex * 50}%)`;
 
 setInterval(showNextSlide, 2500); // Troca a imagem a cada 3 segundos
 
+
+const cartIcon = document.getElementById('cart');
+const cartSidebar = document.getElementById('cartSidebar');
+
+cartIcon.addEventListener('click', () => {
+    cartSidebar.classList.add('show');
+});
+
+function closeCart() {
+    cartSidebar.classList.remove('show');
+}
+
+    // Seleciona todos os botões de compra
+    document.querySelectorAll('.comprar-btn').forEach(botao => {
+        botao.addEventListener('click', function() {
+            let produto = this.closest('.produtos'); // Pega o elemento pai
+            let nome = produto.querySelector('.produto-nome').innerText;
+            let preco = produto.querySelector('.produto-preco').innerText;
+
+            // Adiciona ao carrinho
+            let listaCarrinho = document.getElementById('lista-carrinho');
+            let item = document.createElement('li');
+            item.innerHTML = `${nome} - ${preco}`;
+            listaCarrinho.appendChild(item);
+        });
+    });
+    
+
+    
